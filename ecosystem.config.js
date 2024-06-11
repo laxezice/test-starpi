@@ -15,8 +15,10 @@ module.exports = {
       repo: "https://github.com/laxezice/test-starpi.git",
       path: "/home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co",
       "pre-deploy-local": "",
-      "post-setup": "npm i && npm run build",
-      "post-deploy": "npm -v",
+      "post-setup":
+        'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm i && npm run build',
+      "post-deploy":
+        'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm -v',
       "pre-setup": "",
     },
   },
