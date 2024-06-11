@@ -16,7 +16,7 @@ module.exports = {
       path: "/home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co",
       "pre-deploy-local": "",
       "post-setup":
-        'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm i && npm run build',
+        'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm i && npm run build && pm2 start ecosystem.config.js',
       "post-deploy":
         'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm i && npm run build && pm2 reload ecosystem.config.js',
       "pre-setup": "",
