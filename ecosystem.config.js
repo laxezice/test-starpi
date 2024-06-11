@@ -9,7 +9,7 @@ module.exports = {
 
   deploy: {
     develop: {
-      user: "ice",
+      user: "digitalsetup-strapi-user",
       host: "159.89.196.226",
       ref: "origin/main",
       repo: "https://github.com/laxezice/test-starpi.git",
