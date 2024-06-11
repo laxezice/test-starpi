@@ -15,6 +15,7 @@ module.exports = {
       repo: "https://github.com/laxezice/test-starpi.git",
       path: "/home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co",
       "pre-deploy-local": "",
+      "post-setup": "yarn install",
       "post-deploy": "yarn install && pm2 reload ecosystem.config.js",
       "pre-setup": "",
     },
