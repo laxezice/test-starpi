@@ -18,7 +18,7 @@ module.exports = {
       "post-setup":
         'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm i && npm run build',
       "post-deploy":
-        'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm -v',
+        'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && nvm use default && npm i && npm run build && pm2 reload ecosystem.config.js',
       "pre-setup": "",
     },
   },
