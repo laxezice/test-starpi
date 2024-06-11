@@ -17,7 +17,7 @@ module.exports = {
       "pre-deploy-local": "",
       "post-setup": "npm i && npm run build",
       "post-deploy":
-        "/home/digitalsetup-strapi-user/.nvm/versions/node/v20.14.0/bin/npm i && npm run build && pm2 reload ecosystem.config.js",
+        "/home/digitalsetup-strapi-user/.nvm/versions/node/v20.14.0/bin/npm i && /home/digitalsetup-strapi-user/.nvm/versions/node/v20.14.0/bin/npm run build && pm2 reload ecosystem.config.js",
       "pre-setup": "",
     },
   },
