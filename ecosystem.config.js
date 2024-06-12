@@ -16,10 +16,10 @@ module.exports = {
       path: "/home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co",
       "pre-deploy-local": "",
       "post-setup":
-        'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" && nvm use default && pm2 start ecosystem.config.js',
+        "bash /home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co/current/setup.sh",
       "post-deploy":
         "bash /home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co/current/deploy.sh",
-      "pre-setup": "pwd",
+      "pre-setup": "rm -rf ./source && rm -rf ./current",
     },
   },
 };
