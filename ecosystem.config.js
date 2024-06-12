@@ -19,7 +19,7 @@ module.exports = {
         "bash /home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co/current/setup.sh",
       "post-deploy":
         "bash /home/digitalsetup-strapi-user/htdocs/strapi.digitalsetup.co/current/deploy.sh",
-      "pre-setup": "pwd && rm -rf ./source && rm -rf ./current",
+      "pre-setup": "",
     },
   },
 };
